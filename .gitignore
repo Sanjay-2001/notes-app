@@ -1,0 +1,48 @@
+# Node.js dependencies
+/node_modules
+/package-lock.json
+/yarn.lock
+
+# Logs
+*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Debug and IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Frontend (React) specific
+/build
+/.env
+
+# Backend (Node.js) specific
+/dist
+/.env
+
+# Temporary files
+*.swp
+*.swo
+
+# Coverage directory (for tests)
+/coverage
+
+# Production build folder (for frontend)
+frontend/build
+
+# NPM run directory (temporary)
+frontend/notes/node_modules
+frontend/notes/build
+frontend/notes/.env
+
+# Ignore all files from backend
+backend/node_modules
+backend/.env
