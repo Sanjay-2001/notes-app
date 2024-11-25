@@ -36,11 +36,10 @@ Thumbs.db
 /coverage
 
 # Production build folder (for frontend)
-frontend/build
+frontend/notes/build
 
 # NPM run directory (temporary)
 frontend/notes/node_modules
-frontend/notes/build
 frontend/notes/.env
 
 # Ignore all files from backend
