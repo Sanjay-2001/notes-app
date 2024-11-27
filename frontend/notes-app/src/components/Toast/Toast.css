@@ -1,0 +1,42 @@
+.toast-body {
+  padding: 0.2em 0.2em 0.25em 0.5em;
+  border-radius: 0.4em;
+
+  border: 1px solid rgba(120, 120, 120, 0.364);
+
+  position: relative;
+  left: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background-color);
+}
+
+.green {
+  background-color: rgb(78, 195, 78);
+}
+
+.red {
+  background-color: rgb(236, 75, 75);
+}
+
+.visible {
+  opacity: 1;
+}
+.notVisible {
+  opacity: 0;
+}
+.toast-message {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 0.1em 1em 0.1em 0.5em;
+  border-radius: 0.2em;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.toast-icon {
+  margin-right: 0.3em;
+  font-size: 1.2em;
+  transform: scale(1.3);
+}

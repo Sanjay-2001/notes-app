@@ -1,0 +1,138 @@
+:root {
+  --background-color-light: #f0f0f0;
+  --background-color-dark: #121212;
+
+  --text-color-light: #121212;
+  --text-color-dark: #ffffff;
+
+  --header-background-light: #fff;
+  --header-background-dark: #333;
+
+  --content-background-light: #f5f5f5;
+  --content-background-dark: #2c2c2c;
+
+  --icon-light: #000;
+  --icon-dark: #fff;
+
+  --overlap-light: rgba(0, 0, 0, 0);
+  --overlap-dark: rgba(0, 0, 0, 0);
+
+  --glass-light: rgba(255, 255, 255, 0.603);
+  --glass-dark: rgba(0, 16, 19, 0.603);
+
+  --primary-color-light: #5eb19b;
+  --primary-color-dark: #4a8877;
+
+  --secondary-color-light: #396b5e;
+  --secondary-color-dark: #5eb19b;
+}
+
+/* Default to light theme */
+[data-theme="light"] {
+  --background-color: var(--background-color-light);
+  --text-color: var(--text-color-light);
+  --header-background: var(--header-background-light);
+  --content-background: var(--content-background-light);
+  --icon-color: var(--icon-light);
+  --overlap-background: var(--overlap-light);
+  --glass-background: var(--glass-light);
+  --primary-color: var(--primary-color-light);
+  --secondary-color: var(--secondary-color-light);
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --background-color: var(--background-color-dark);
+  --text-color: var(--text-color-dark);
+  --header-background: var(--header-background-dark);
+  --content-background: var(--content-background-dark);
+  --icon-color: var(--icon-dark);
+  --overlap-background: var(--overlap-dark);
+  --glass-background: var(--glass-dark);
+  --primary-color: var(--primary-color-dark);
+  --secondary-color: var(--secondary-color-dark);
+}
+
+.app-body {
+  height: 100dvh;
+  background-color: var(--background-color);
+
+  display: flex;
+  justify-content: center;
+}
+
+.app-inner-body {
+  flex-grow: 1;
+  padding: 2em 1em;
+}
+
+.header-body {
+  position: absolute;
+  background-color: var(--background-color);
+  font-size: 1.2em;
+  border-radius: 0 0 1em 0;
+  color: var(--text-color);
+  padding: 0.5em 1em;
+  font-weight: 700;
+  z-index: 1000 !important;
+  cursor: pointer;
+}
+
+.content-body {
+  position: relative;
+
+  background-color: #0d1931;
+  width: 100%;
+  height: 100%;
+  border-radius: 2em;
+  background-image: url("../public/assets/images/glasscube.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.content-body-overlap {
+  position: absolute;
+  /* background-color: #00000022; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 2em;
+  z-index: 5;
+}
+
+.content {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2em;
+  z-index: 100 !important;
+}
+
+.mode-icons {
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: rgb(236, 90, 110);
+  border: none;
+  padding: 0.3em 1em;
+  color: #fcfcfc;
+  font-size: 1em;
+  border-radius: 0.3em;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(56, 7, 7, 0.774),
+    inset -2px -2px 4px rgba(255, 168, 168, 0.911),
+    inset 1px 1px 1px rgba(163, 32, 32, 0.911);
+}
+
+.btn-primary:hover {
+  background-color: rgb(243, 106, 124);
+}
