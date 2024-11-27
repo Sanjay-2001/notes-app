@@ -39,8 +39,8 @@ Thumbs.db
 frontend/notes/build
 
 # NPM run directory (temporary)
-frontend/notes/node_modules
-frontend/notes/.env
+frontend/notes-app/node_modules
+frontend/notes-app/.env
 
 # Ignore all files from backend
 backend/node_modules
