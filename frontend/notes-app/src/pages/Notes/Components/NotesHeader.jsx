@@ -4,6 +4,7 @@ import { IoSunny, IoMoon } from "react-icons/io5";
 import { getInitials } from "../../../utils/helper";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { IoMdLogOut } from "react-icons/io";
 
 const NotesHeader = ({
   toggleMode,
@@ -64,6 +65,9 @@ const NotesHeader = ({
         </div>
 
         <div className="user-logo"> {getInitials(userInfo?.fullName)}</div>
+        <div className="user-logout" onClick={onLogout}>
+          <IoMdLogOut />
+        </div>
         <div className="user-details">
           <div className="user-name">{userInfo?.fullName}</div>
           <button className="logout-btn" onClick={onLogout}>

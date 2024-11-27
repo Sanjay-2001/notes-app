@@ -2,11 +2,12 @@
   height: 100%;
   display: grid;
   grid-template-rows: auto 1fr;
-  margin-right: 1em;
+
+  /* margin-right: 1em; */
 }
 
 .loading-body {
-  margin-left: 1em;
+  /* margin-left: 1em; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -441,4 +442,54 @@
 
 .tag-add-btn:hover {
   background-color: rgba(80, 109, 235, 0.854);
+}
+
+.user-logout {
+  background-color: #ff738d;
+  color: #fcfcfc;
+  height: 1.6em;
+  width: 1.6em;
+
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .not-found-box {
+    width: 15em;
+  }
+
+  .notes-header-body {
+    padding: 0.2em 0.5em;
+  }
+
+  .addEdit-box {
+    width: 20em;
+  }
+
+  .search-input {
+    width: 6em;
+  }
+
+  .search-box {
+    margin-right: 0em;
+  }
+
+  .user-details {
+    display: none;
+  }
+
+  .user-body {
+    padding: 0.2em 0.5em;
+  }
+
+  .close-btn {
+    right: -1em;
+  }
+  .user-logout {
+    display: flex;
+  }
 }
