@@ -63,6 +63,7 @@
   display: flex;
   gap: 0.5em;
   align-items: center;
+  margin-right: 0.5em;
 }
 
 .search-box {
@@ -175,8 +176,8 @@
 .circle-body {
   padding: 1em;
   position: absolute;
-  bottom: 1em;
-  right: 1em;
+  bottom: 0em;
+  right: 0em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -447,8 +448,8 @@
 .user-logout {
   background-color: #ff738d;
   color: #fcfcfc;
-  height: 1.6em;
-  width: 1.6em;
+  height: 1.5em;
+  width: 1.5em;
 
   border-radius: 50%;
   display: none;
@@ -464,6 +465,10 @@
 
   .notes-header-body {
     padding: 0.2em 0.5em;
+  }
+
+  .notes-header {
+    margin-right: 0em;
   }
 
   .addEdit-box {
